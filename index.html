@@ -1,136 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    :root {
-      --primary-green: hsl(75, 94%, 57%);
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-      --neutral-white: hsl(0, 0%, 100%);
-      --neutral-grey: hsl(0, 0%, 20%);
-      --neutral-dark-grey: hsl(0, 0%, 12%);
-      --neutral-off-black: hsl(0, 0%, 8%);
-    }
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --primary-green: hsl(75, 94%, 57%);
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--neutral-white);
-    }
+        --neutral-white: hsl(0, 0%, 100%);
+        --neutral-grey: hsl(0, 0%, 20%);
+        --neutral-dark-grey: hsl(0, 0%, 12%);
+        --neutral-off-black: hsl(0, 0%, 8%);
+      }
 
-    .container {
-      min-height: 100vh;
-      background-color: var(--neutral-off-black);
-      display: grid;
-      grid-template-rows: 1fr auto;
-      place-items: center;
-    }
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        color: var(--neutral-white);
+      }
 
-    main {
-      background-color: var(--neutral-dark-grey);
-      width: calc(100% - 3rem);
-      border-radius: .75rem;
-      text-align: center;
-      padding: 1.5rem 0;
-      max-width: 23rem;
-    }
+      .container {
+        min-height: 100vh;
+        background-color: var(--neutral-off-black);
+        display: grid;
+        grid-template-rows: 1fr auto;
+        place-items: center;
+      }
 
-    .button {
-      display: block;
-      background-color: var(--neutral-grey);
-      color: var(--neutral-white);
-      width: calc(100% - 3rem);
-      margin: .875rem auto;
-      border-radius: .375rem;
-      padding: .75rem 0;
-      font-size: .875rem;
-      font-weight: 600;
-      transition: all 0.5s ease-in-out;
-    }
+      main {
+        background-color: var(--neutral-dark-grey);
+        width: calc(100% - 3rem);
+        border-radius: 0.75rem;
+        text-align: center;
+        padding: 1.5rem 0;
+        max-width: 23rem;
+      }
 
-    .button:hover {
-      background-color: var(--primary-green);
-      color: var(--neutral-off-black);
-    }
+      .button {
+        display: block;
+        background-color: var(--neutral-grey);
+        color: var(--neutral-white);
+        width: calc(100% - 3rem);
+        margin: 0.875rem auto;
+        border-radius: 0.375rem;
+        padding: 0.75rem 0;
+        font-size: 0.875rem;
+        font-weight: 600;
+        transition: all 0.5s ease-in-out;
+      }
 
-    .button:last-of-type {
-      margin-bottom: 0;
-    }
+      .button:hover {
+        background-color: var(--primary-green);
+        color: var(--neutral-off-black);
+      }
 
-    footer {
-      background-color: var(--neutral-dark-grey);
-      font-size: .75rem;
-      font-weight: 400;
-      width: calc(100% - 3rem);
-      text-align: center;
-      padding: .75rem 0;
-      border-radius: .75rem;
-      margin-bottom: 1rem;
-      max-width: 23rem;
-    }
+      .button:last-of-type {
+        margin-bottom: 0;
+      }
 
-    footer a {
-      color: var(--primary-green);
-      font-weight: 600;
-      text-decoration: none;
-    }
+      footer {
+        background-color: var(--neutral-dark-grey);
+        font-size: 0.75rem;
+        font-weight: 400;
+        width: calc(100% - 3rem);
+        text-align: center;
+        padding: 0.75rem 0;
+        border-radius: 0.75rem;
+        margin-bottom: 1rem;
+        max-width: 23rem;
+      }
 
-    .location {
-      color: var(--primary-green);
-      font-size: .875rem;
-      font-weight: 700;
-      margin-top: 0;
-      margin-bottom: 1.5rem;
-    }
+      footer a {
+        color: var(--primary-green);
+        font-weight: 600;
+        text-decoration: none;
+      }
 
-    .description {
-      font-size: .875rem;
-      margin-bottom: 1.5rem;
-    }
+      .location {
+        color: var(--primary-green);
+        font-size: 0.875rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+      }
 
-    h1 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: .5rem;
-    }
+      .description {
+        font-size: 0.875rem;
+        margin-bottom: 1.5rem;
+      }
 
-    img {
-      border-radius: 100%;
-      width: 6rem;
-    }
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
 
-  </style>
-</head>
-<body>
-  <div class="container">
-    <main>
-      <img src="./assets/images/avatar-jessica.jpeg" alt="">
-      <h1>Jessica Randall</h1>
-      <p class="location">London, United Kingdom</p>
-      <p class="description">"Front-end developer and avid reader."</p>
-      <a class="button">GitHub</a>
-      <a class="button">Frontend Mentor</a>
-      <a class="button">LinkedIn</a>
-      <a class="button">Twitter</a>
-      <a class="button">Instagram</a>
-    </main>
-    
-    <footer>
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Elio Flores</a>.
-    </footer>
-  </div>
+      img {
+        border-radius: 100%;
+        width: 6rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <img src="./assets/images/avatar-jessica.jpeg" alt="" />
+        <h1>Jessica Randall</h1>
+        <p class="location">London, United Kingdom</p>
+        <p class="description">"Front-end developer and avid reader."</p>
+        <a class="button">GitHub</a>
+        <a class="button">Frontend Mentor</a>
+        <a class="button">LinkedIn</a>
+        <a class="button">Twitter</a>
+        <a class="button">Instagram</a>
+      </main>
 
-</body>
+      <footer>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://elioflo.github.io/elioflo/" target="_blank">Elio Flores</a>.
+      </footer>
+    </div>
+  </body>
 </html>
